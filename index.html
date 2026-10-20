@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Música, Diseño, Escritura</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Georgia, "Times New Roman", Times, serif;
+            background-color: #ebebde;
+            color: #141414;
+            line-height: 1.65;
+            text-wrap: pretty;
+        }
+
+        #myVideo {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 60px 28px 50px 28px;
+        }
+
+        .video-container {
+           position: relative;
+           width: 100%;
+           height: 100vh;
+           overflow: hidden;
+           background-color: #000000;
+        }
+        
+        .video-overlay {
+           position: absolute;
+           inset: 0;
+           background-color: rgba(0, 0, 0, 0.4);
+           z-index: 1;
+           pointer-events: none;
+        }
+
+        .title-card {
+           position: relative;
+           width: 100%;
+           height: inline-block;
+           overflow: hidden;
+           background-color: #141414;
+        }        
+
+        .video-titulo {
+           position: absolute;
+           inset: 0;
+           z-index: 2;
+           display: flex;
+           justify-content: center;
+           align-items: flex-start;
+           padding: 25px;
+           pointer-events: none;
+        }
+
+        .video-textos {
+           position: absolute;
+           inset: 0;
+           z-index: 2;
+           display: flex;
+           justify-content: space-between;
+           align-items: flex-end;
+           padding: 50px;
+           pointer-events: none;
+        }
+
+        .bloque-texto {
+           color: #ebebde;
+           font-size: clamp(1.4rem, 2vw, 2.5rem);
+           line-height: 1.2;
+           max-width: 500px;
+        }
+
+        .bloque-titulo {
+           color: #ebebde;
+           margin: 50px;
+           font-size: clamp(3.5rem, 7vw, 5rem);
+           font-weight: bold;
+           text-align: center;
+           line-height: 1.2;
+        }
+
+        .card {
+           color: #ebebde;
+           margin: 60px;
+           font-size: clamp(2rem, 7vw, 3.5rem);
+           font-family: Oswald ,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+           font-weight: bold;
+           text-align: center;
+           line-height: 1.2;
+        }        
+
+        .footer {
+           color: #ebebde;
+           margin: 30px;
+           font-size: 1rem;
+           font-family: Oswald ,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+           font-weight: bold;
+           text-align: center;
+           line-height: 1.2;
+        }                
+        
+
+        p {
+            font-size: 1.25rem;
+            text-align: left;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: clamp(1.7rem, 4vw, 2rem);
+            text-align: center;
+            font-family: Oswald ,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-weight: bold;
+            line-height: 1.2;
+            margin: 45px;
+        }
+
+        a:link {
+            color: #ebebde;
+        }
+
+        a:visited {
+            color: #ebebde;
+        }
+
+        a:hover {
+            color: rgb(88, 216, 216);
+        }
+
+        a:active {
+            color: rgb(88, 216, 216);
+        }
+
+
+
+        
+        @media (max-width: 768px) {
+            .video-textos {
+               padding: px;
+               flex-wrap: wrap;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+
+    <video autoplay muted loop playsinline id="myVideo">
+        <source src="testing.mp4" type="video/mp4">
+        Tu navegador no soporta HTML5 video.
+    </video>
+
+    <div class="video-overlay"></div>
+
+    <div class="video-titulo">
+
+        <div class="bloque-titulo">
+            MÚSICA, DISEÑO, ESCRITURA
+        </div>
+
+    </div>
+    
+    <div class="video-textos">
+
+        <div class="bloque-texto">
+            Escrito el 16/08/2026
+        </div>
+
+        <div class="bloque-texto">  
+            por Juan Pareschi.
+        </div>
+
+    </div>
+
+    </div>
+
+    <div class="title-card">
+
+        <div class="card">
+            SIDE A: ALL MY MUSIC SOUNDS THE SAME
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <p>
+            Tras la búsqueda de un sonido más mainstream y su aproximación a través de canciones escritas por otros en CRASH, Charli buscó crear algo bajo sus términos, no guiado por su potencial en la masividad. Pensando en la música que a ella le fascinaba en su adolescencia, vuelve al estilo de escritura ultra-directa y confesional que la británica llevaba casi una década perfeccionando, a través de una paleta sonora que referencia directamente al electroclash realizado por Ed Banger Records (por artistas tales como SebastiAn, Justice y Uffie). En este proceso, Charli logró canalizar como nunca antes sus miedos como artista (ya sea la envidia al éxito ajeno o las dudas de si sus aspiraciones valen la pena frente al costo personal) y convertir todas estas ansiedades personales en himnos pop en los que cualquiera puede verse reflejado.
+        </p>
+        
+        <p>
+            De esta manera, BRAT logró que ya no habláramos de ella como "el futuro del pop" o como una propuesta alternativa al mainstream. Ella se vuelve parte del frente cultural occidental, algo que Charli trató de lograr, siempre a su ritmo desde Vroom Vroom en adelante. Ahora desde la cima: ¿Qué haces cuando el disco que se suponía que era “para los fans” es, paradójicamente, lo más mainstream de tu carrera? ¿Cuándo todos los sonidos que te convirtieron en “la referencia favorita” se vuelven elementos comunes dentro de la música pop contemporánea? 
+        </p>
+
+        <h2>
+            "SI EN BRAT ESTÁBAMOS ESPIANDO SUS CONVERSACIONES, AQUÍ LEEMOS SUS CONFESIONES DE DIARIO"
+        </h2>
+
+        <p>
+            Su respuesta fue vender los tornamesas y comprarse unas guitarras. En búsqueda de un sonido deliberadamente contrario y antitético de sus proyectos anteriores; Music, Fashion, Film llega a un universo sonoro más orgánico, el cual, al ser guiado de nuevo por A.G. Cook y Finn Keane, es fácil pensar en Thy Slaughter. Pero acá se muestra un claro foco en las guitarras por sobre los sintetizadores, más que el juego y mezcla entre ambos presentado en Soft Rock, también se rechaza el cuidado y los mixes limpios propuestos previamente por el dúo, creando en el disco una atmósfera amateur, acercándose más a demos y sketches sin terminar (cabe mencionar que el dúo hace de ingenieros de mezcla del disco, a diferencia de proyectos anteriores donde Geoff Swan estuvo al mando, demostrando que cualquier aspereza técnica es deliberada).
+        </p>
+        
+        <p>
+            Las letras no se alejan de esta lógica; si en BRAT estábamos espiando sus conversaciones, aquí leemos sus confesiones de diario. Están compuestas por chistes internos y referencias que solo ella parece entender y oraciones directas que tienden a revelar mas de lo que debería, a veces escritas sin medir lo mal que la hacen quedar. Las melodías propuestas también son mucho más simples a lo que la británica nos tiene acostumbrado o a veces inexistentes ya, casi pasando al territorio del spoken word.
+        </p>
+
+        <p>
+            Esto hace al proyecto confrontacional desde el primer segundo, incluso para los seguidores más acérrimos de su música, marcada por canciones listas para las pistas de baile. Pero al contrario de lo pretencioso que pueden parecer estas decisiones, al escuchar el disco queda claro que nace desde una profunda honestidad sobre la incomodidad que tiene con su imagen, llevando a aciertos como Wink Wink, en donde bromea sobre cómo ella ha cambiado, o en realidad, que no la entienden y es más que una party girl, mientras que en Persona, se enfrenta a qué tan honesta ha sido consigo misma sobre su vida interior y lo que ella proyecta a través de su performance. Cuando habla de su relación con la moda, algo tocado en Card Decline o SS26, siempre es desde cómo esta le permite la construcción de algo artificial, ayudando a forjar una identidad que funciona como una fachada frente a quien realmente es. Charli no sabe que hacer con esta fama, ni se siente a gusto habitando el personaje que construyó durante los últimos años.
+        </p>
+        
+        <h2>
+            "UNA RECOLECCIÓN DE TODO LO QUE PESA HACER ALGO PROPIO, AL MISMO TIEMPO QUE RESCATA TODO LO VALIOSO QUE OCURRE AL CREAR"
+        </h2>
+
+        <p>
+            Lo que sí sabe es lo bien que se siente creando algo y la importancia que tiene para ella, no tanto como algo que le permite el éxito o siquiera la trascendencia, más bien como un acto de cordura y autopreservación; tal como declara en Camera, solo sabe cómo le hace sentir, y esto es razón suficiente para continuar haciéndolo. Yeah ahonda en la euforia de cuando finalmente llega la inspiración para crear, usando la repetición para evocar lo monótono de los eternos bloqueos creativos, que no suelen tener sentido hasta que, finalmente, uno decide sentir. Pensando en la persona más importante dentro del proceso de creación de su música, en Magic Metal Montana le escribe una canción de amor a su amigo y colaborador más cercano, A.G. Cook, celebrando lo bonito que es tener alguien que te entiende y te ayuda a traducir tus ideas. En conjunto, el disco se vuelve una recolección de todo lo que pesa hacer algo propio, al mismo tiempo que rescata todo lo valioso que ocurre al crear.          
+        </p>
+
+        <p>
+            A veces, quizás es demasiado y cuesta tomarlo como un proyecto con intenciones genuinas, como en Rock Music que se entiende inicialmente como un chiste sobre los clichés del pop/rock y power chords o un postureo pretencioso más que una declaración sobre lo divertido que puede ser intentar cosas nuevas. Sin embargo, todo sigue en la misma línea que la británica y sus colaboradores habían trabajado previamente, sólo aproximado desde una estética más indie rock maquetera, muy fiel a sus otros proyectos en donde se da un foco en la distorsión, los hooks construidos en base a la repetición extrema y el contraste entre el procesado digital y la honestidad, todos presentes en No One Lasts Forever, el statement piece del disco. 
+        </p>
+        
+        <h2>
+            "ENTIENDE PERFECTAMENTE QUE LA ÚNICA FORMA PARA ASPIRAR A ALGO MÁS QUE EL ÉXITO ES NO PENSAR SOBRE EL MISMO"
+        </h2>
+
+        <p>
+            Nada es eterno, el éxito y la creatividad no se pueden mantener para siempre, no al menos desde los mismos márgenes y Charli lo tiene más que claro, ya que su experimentación le ha permitido llegar a otras perspectivas de acercarse al pop, que más allá de los cigarros, el raving o el verde ultrasaturado, ha sido lo que la ha definido realmente como artista. Music, Fashion, Film puede ser algo chocante y agotador por su autoindulgencia, pero entiende perfectamente que la única forma para aspirar a algo más que el éxito es no pensar sobre el mismo, no dar en el gusto y solo responder al llamado de la creatividad cuándo llega. El instinto siempre tiene razón.
+        </p>
+
+    </div>
+
+    <div class="title-card">
+
+        <div class="card">
+            SIDE B: DON'T FUCKING CHOKE ON YOUR EGO
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <p>
+            A pesar de ser un mega fan de su obra, yo no quería precisamente enamorarme de MFF, generalmente los discos post-éxito (Motomami, Starboy o Nadie Sabe Lo Que Va A Pasar Mañana, por mencionar algunos ejemplos dentro del pop) me causan cierto rechazo, pero mucho del texto y su contenido conceptual tocó un nervio sensible mío y ha sido imposible no verme reflejado en todo lo que ella ha sacado en los últimos meses. Pensando sobre el diseño, que es el campo desde el cual expreso mi creatividad, la importancia que tiene para mí el acto de diseñar siempre surge desde algo instintivo. Al entrar al bachillerato de ciencias sociales pase por un sinfín de clases de distintas disciplinas, las cuales, en menor a mayor medida, me generaban un desinterés enorme o bien, era clara mi falta de habilidades en el campo. No fue hasta tener una clase de fotografía, guiada por un profesor de diseño, que se prendió algo dentro de mí. Tal como lo dice Charli, lo único que supe fue cómo me hizo sentir.
+        </p>
+
+        <h2>
+            "CADA ENCARGO QUE ME DABAN ERA UN PUZZLE QUE HABÍA QUE RESOLVER Y SI BIEN, MUCHAS VECES NO PUDE RESOLVERLOS, SIEMPRE FUE GRATIFICANTE EL PROCESO"
+        </h2>
+
+        <p>
+            Tras un par de clases, no me quedaban dudas, tenía que estudiar diseño gráfico. Cada encargo que me daban era un puzzle que había que resolver y si bien, muchas veces no pude resolverlos, siempre fue gratificante el proceso para tratar de encontrar las soluciones. Durante casi seis años, esto se volvió rutina: llegar a corregir y escuchar que no funciona o que no cierra y volver atrás para pulir. No era fácil llegar al resultado final, pero siempre había una satisfacción enorme cuando cerrabas la conceptualización para un proyecto, o el primer momento en donde una diagramación hace sentido. Esta es de las mejores sensaciones que existen, sientes que te han contado el secreto mas grande del mundo.
+        </p>
+
+        <p>
+            Una de las sensaciones más vacías de la carrera era llegar a la excelencia. Para mi, nunca dejó de ser un bajón cuando llegabas a una corrección y los profesores no sabían qué decir ni aportar. Claro, es gratificante cerrar una idea y poder concretarla, pero siempre era una incertidumbre qué hacer con eso, se sentía que se cortaba el flujo de creatividad, que la idea ya no tenía más espacio para crecer. En cambio cuando todo salía mal, a pesar de que podía ser agonizante y me tendía a ahogar en la frustración, tenía la certeza de que en cualquier momento aún se me podía prender la ampolleta, lo cual era maravilloso cuando llegaba tras tanto sufrimiento.
+        <p>       
+
+        <h2>
+            "ES UNA SENSACIÓN ADICTIVA, EL ESTAR INSPIRADO [...] ES LA MEJOR FORMA QUE TENGO PARA IGNORAR TODO LO QUE SIENTO POR DENTRO"
+        </h2>
+
+        <p>
+            Siento que es una sensación adictiva, el estar inspirado. Me pasa que en mis momentos más bajos lo que más deseo es tener algo que hacer o crear, y normalmente coincide que ahí es donde el bloqueo creativo abunda. Por ejemplo, en abril de este año, durante mi proceso de proyecto de título, tocaba iniciar el diseño de identidad de una marca en conjunto a la construcción de un sitio web y no sabía cómo partir, no en cuanto al orden y planificación, trabajo que estaba realizado hasta el último detalle, sino en cuanto a las ideas, lo que en sí realmente mueven el proyecto. Más allá de sentir la espada en el cuello, tampoco sabía qué hacer con todo ese tiempo que debía ser destinado a esto, y me volví loco, pase de reordenar toda mi pieza a toda mi casa, organizando desde mi closet hasta el escritorio de mi hermano. Vendí cosas por Facebook de forma maníaca y poco racional, llegando a entregar cosas de un extremo de la ciudad a otro, con el fin de que no hubiera distracción alguna para poder crear, a pesar de que realmente, ya no lo había.
+        </p>
+
+        <p>
+            Y de repente, la inspiración llegó. Esas 2 primeras semanas fueron increíbles, cada día se llegaba a soluciones muy concretas que transformaban rápidamente estas ideas en una realidad inminente. De ahí, no pude parar hasta que defendí mi memoria, día y noche dedicado casi de manera total a terminar lo que me propuse. La inspiración estaba ahí todos los días pero esta se vuelve peligrosa, ya que es la mejor forma que tengo para ignorar todo lo que siento por dentro, y durante mi proyecto de titulo, era un uróboro. Cada vez que paraba o programaba un descanso, me sentía horrible, no sentía culpa por detenerme, era más bien un vacío inexplicable que llegaba y se apoderaba de mi. Y detenerlo se vuelve complicado cuando es tu futuro depende de ello, total, es trabajo, hay que hacerlo. Así que decidí crear y seguir creando, creyendo que si efectivamente cerraba bien con esto, todos mis problemas se iban a solucionar.
+        </p>
+
+        <h2>
+            "EN LO MATERIAL, UN PROYECTO REDONDO GENERALMENTE SOLO TERMINA REFLEJANDO UN TRABAJO BIEN HECHO, NI MUCHO MÁS NI MUCHO MENOS"
+        </h2>
+
+        <p>
+            Pero nada nos va a salvar, y el diseño no es excepción. Siempre he tenido ese problema, el creer que terminar un buen proyecto es todo lo que necesito para llegar al siguiente nivel. Pero en lo material, un proyecto redondo generalmente solo termina reflejando un trabajo bien hecho, ni mucho más ni mucho menos. Por eso de a poco, cerrar un trabajo es la parte más desagradable de un proyecto para mí, ya que materializar las ideas significa que ya no aspiran a un ideal fantasioso y al infinito imposible de lo que uno puede imaginar, sino que se vuelven reales y toca entender los procesos y los resultados por lo que son más que por lo que podrían ser.
+        
+        <p>
+           Mi título no fue la excepción, yo solo quería escapar de la realidad y diseñar fue la herramienta que me permitió evadir lo que estaba pasando adentro mío. Yo no quería enfrentar la realidad, y me encargué de hacer todo lo que fuera posible para no enfrentarla. Partes del proyecto que debía delegar se volvieron de autoría propia, las fases de contacto con terceros las reduje en escala y me encargue de minimizar cualquier tipo de interacción que no fuera en pos de diseñar. Rehice mi memoria de título tres veces distintas, de pies a cabeza, nuevo formato y todo.
+        </p>
+        
+        <p>
+            Aparte no quería aterrizar las ideas, nunca solté la posibilidad de que todo se podría mejorar hasta el último minuto. Yo creía que mi proyecto podía crecer y cambiar incluso cuando estaba todo ya cerrado, incluso cuando ya no era posible. Esto significó que cuando entregué mi memoria, exploté, tuve ataques de pánico por días como no había tenido en años. Pensar que mi trabajo ya estaba terminado me destruyó. Tuve que dejar de verlo desde mi imaginación, desde un mundo aspiracional. No sabía que estaba persiguiendo más allá del propio proyecto.
+        </p>
+        
+        <h2>
+            "EL DÍA DE LA DEFENSA TODO SE DIO EXACTAMENTE COMO LO IMAGINABA. FUE UNO DE LOS DÍAS MÁS FELICES DE MI VIDA, Y AL MISMO TIEMPO, UNA DE LAS DECEPCIONES MÁS GRANDES QUE HE TENIDO"
+        </h2>
+
+        <p>
+            A pesar de lo autodestructivo de todo este proceso, del dejar de lado mi bienestar en pos de alcanzar la excelencia, al llegar el día de la defensa, todo se dio exactamente como lo imaginaba. Fue uno de los días más felices de mi vida, y al mismo tiempo, una de las decepciones más grandes que he tenido. En mi mente, sentía que me iba sorprender y que todo iba a abrir puertas a cosas más grandes que no podía esperar ni entender cuando en realidad, fue sólo el reflejo de un trabajo bien hecho, en conjunto a quienes se sentían orgullosos por eso, ni más ni menos.
+        </p>
+
+        <p>
+            Desde entonces he estado reflexionando y preguntándome si pertenezco al mundo del diseño o quizás debo dejar todo botado. Esta sensación de vacío no se ha ido, es más, se asentó en mi cabeza durante el último tiempo, y a pesar de todo el cariño que le tengo al rubro, siento que al mismo tiempo mi propio actuar me ha detenido y me va a impedir alcanzar lo que realmente busco, más allá de la aspiración innata que tengo de crear, tal como Charli lo ha escrito en su música por mucho tiempo. Irónicamente, lo único que supe hacer con este sentimiento fue crear algo al respecto. 
+        </p>
+        
+        <p>
+            Yo escribo, al menos como hobby, desde los 16 años. Siempre he tenido una apreciación por el mundo de la crítica y de los blogs, no quizás de una manera muy formal y desarrollada pero sí completamente honesta. En ese tiempo pasaba por un periodo triste, en donde sentía que no tenía el poder de cambiar nada respecto a mi vida, y al mismo tiempo, no sabía cómo responder a ese llamado que tenía de crear. Haciéndome cargo de este vacío, decidí empezar un blog donde escribía reseñas de videojuegos, en el cual cubría principalmente juegos indies muy pequeños para la Nintendo Switch, consola que recientemente había salido al mercado.
+        </p>        
+
+        <p>
+            Mucho de lo que escribí era pésimo, no llegaba a los estándares a los que aspiraba ni tampoco servía de mucho a alguien que buscaba la típica reseña de juego, las cuales normalmente están erróneamente enfocadas como una guía de compra. Esto sumado a que lo hacía en inglés, una lengua en donde mis bajas capacidades de redacción eran reducidas a la mitad. Dicho así, parece un desastre pero la verdad es que lo pase increíble, no solo por la oportunidad que me dieron distintos estudios para probar y cubrir sus juegos, sino también por encontrar un espacio donde expresarse y aprender nuevas formas de hacerlo. De explicar cómo un pequeño acierto marcaba la diferencia entre un juego olvidable y un buen juego, hasta poner en palabras lo vacío y cínico de la experiencia de un juego genérico.
+        </p>
+
+        <p>
+            Mi alcance fue minúsculo pero aun así, logré cosas impensadas en un corto tiempo: cubrir títulos que me interesaban antes que nadie, entrevistar en detalle a un desarrollador de un videojuego que me encantaba, e incluso tener a alguien conmigo colaborando en la página en sí, escribiendo sobre sus propios pensamientos y juegos de interés. Eventualmente lo deje, las causas eran múltiples: aspiraba a mucho, no sabía cómo mejorar o crecer en ese mundo y me impuse muchas barreras que dificultaban lograr esa meta. Pero igualmente me siento orgulloso de ese breve momento, en donde a pesar de todo, me deje llevar por esa sensación de crear y el deseo de hacerlo, quizás no llegue a donde apuntaba, pero ahora miro hacia atrás y esos pequeños logros hoy me parecen casi absurdos de haber conseguido.
+        </p>
+        
+        <p>
+            El ejercicio nunca desapareció en el tiempo, a veces retomado desde lo académico y otras meramente porque era la única forma que tenía de quitarme un peso de encima. Cualquier texto que he redactado siempre surgió únicamente de una necesidad utilitaria o catártica, nunca con el fin de lograr algo adicional, un impulso que empezó a ser el motor de tantos proyectos personales de diseño, empastando y bajando su nivel. Por eso mismo lo retomo públicamente hoy: hay que hacerse cargo de esta chispa cuando aparece y en este espacio es donde siempre me atrevo a fracasar. Amo cómo me hace sentir, y quizás debería permitirme lo mismo al diseñar.
+        </p>
+    </div>
+
+    <div class="title-card">
+
+        <div class="footer">
+            <a href="https://www.instagram.com/juanpareschi/">© 2026 - TEXTO Y PÁGINA CREADA POR JUAN PARESCHI</a>
+        </div>
+
+    </div>    
+</body>
+</html>
